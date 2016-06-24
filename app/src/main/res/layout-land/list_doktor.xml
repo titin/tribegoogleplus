@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        >
+
+    </ListView>
+    <Button
+        android:id="@+id/buttonprev"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/buttonfirst"
+        android:enabled="false"
+        android:onClick="previous"
+        android:text="previous" />
+
+    <Button
+        android:id="@+id/buttonlast"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:enabled="false"
+        android:onClick="last"
+        android:text="last" />
+
+    <Button
+        android:id="@+id/buttonnext"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/buttonlast"
+        android:enabled="false"
+        android:onClick="next"
+        android:text="next" />
+    <ImageButton
+        android:id="@+id/btnImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_down"/>
+    
+</LinearLayout>
